@@ -1,0 +1,114 @@
+/* SECTION */
+
+.contact-section {
+    padding: 6rem 0;
+    background: #DCD3C4;
+}
+
+/* FORM LAYOUT */
+
+#contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* HALF / FULL WIDTH CONTROL */
+
+.form-field.half {
+    width: calc(50% - 1rem);
+}
+
+.form-field.full {
+    width: 100%;
+}
+
+/* LABELS */
+
+.form-field label {
+    display: block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+/* INPUTS */
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #2B2B2B;
+    background: transparent;
+
+    padding: 0.75rem 0;
+    font-size: 1rem;
+    font-family: inherit;
+
+    outline: none;
+}
+
+/* FOCUS STATE (important) */
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    border-bottom: 2px solid #df5c3f;
+}
+
+/* TEXTAREA */
+
+textarea {
+    resize: none;
+}
+
+/* BUTTON */
+
+.form-actions {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.form-actions button {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #2B2B2B;
+
+    padding: 0.75rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* subtle arrow */
+.form-actions button::after {
+    content: "→";
+    font-size: 1rem;
+    transition: transform 0.2s ease;
+}
+
+.form-actions button:hover::after {
+    transform: translateX(5px);
+}
+
+/* HOVER / ACTIVE */
+
+.form-actions button:hover {
+    border-bottom: 2px solid #df5c3f;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+    .form-field.half {
+        width: 100%;
+    }
+}
