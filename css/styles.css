@@ -6,13 +6,13 @@
 
 @font-face {
     font-family: "Neue Haas";
-    src: url("fonts/NeueHaas/NeueHaasDisplayBlack.ttf") format("truetype");
+    src: url("../fonts/NeueHaas/NeueHaasDisplayBlack.ttf") format("truetype");
 }
 
 
 @font-face {
     font-family: "Neue Haas";
-    src: url("fonts/NeueHaas/NeueHaasDisplayBold.ttf") format("truetype");
+    src: url("../fonts/NeueHaas/NeueHaasDisplayBold.ttf") format("truetype");
 
 }
 
