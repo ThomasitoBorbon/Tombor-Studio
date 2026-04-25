@@ -9,7 +9,7 @@
     font-size: clamp(1.5rem, 3vw, 2.75rem);
     line-height: 1.15;
     letter-spacing: -0.04em;
-    margin-right: 1em;
+    margin-right: 2em;
 }
 
 #logo-portfolio {
