@@ -8,6 +8,7 @@
     font-family: "Neue Haas";
     src: url("fonts/NeueHaas/NeueHaasDisplayBlack.ttf") format("truetype");
     font-weight: 900;
+    font-style: normal;
 
 }
 
@@ -16,6 +17,7 @@
     font-family: "Neue Haas";
     src: url("fonts/NeueHaas/NeueHaasDisplayBold.ttf") format("truetype");
     font-weight: 700;
+    font-style: normal;
 
 }
 
@@ -23,7 +25,8 @@
 
 body {
     background-color: #F1EDE8;
-    font-family: "Neue Haas", sans-serif;    
+    font-family: "Neue Haas", sans-serif;
+    font-weight: 700;
     margin: 0;
 }
 
