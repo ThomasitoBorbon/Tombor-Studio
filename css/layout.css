@@ -40,6 +40,8 @@ nav {
 
 #sub-page-header h1{
     font-size: clamp(4rem, 12vw, 10rem);
+    margin-left: .5em;
+    letter-spacing: -0.06em;
 }
 
 /* Hero Section */
@@ -47,13 +49,9 @@ nav {
 .container{
     display: flex;
     justify-content: center;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
-#hero-container img {
-    width: min(100%, 1500px);
-    height: auto;
-}
 
 /* CTA Header Styles */ 
 
@@ -66,17 +64,6 @@ nav {
 
 #CTA-header #container-stamp {
     padding: 0em;
-}
-
-/* Testimonials Styles */
-
-#tesimonials-container {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-
 }
 
 /* ticker Scroll */
@@ -103,6 +90,19 @@ nav {
   to {
     transform: translateX(-35%);
   }
+}
+
+/* Testimonials Styles */
+
+#testimonials-container {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    margin: auto;
+    margin-bottom: 3em;
+    
 }
 
 #test-col1 {
@@ -135,9 +135,8 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
-    height: 400px;
 }
 
 
@@ -152,7 +151,6 @@ nav {
 #CTA-container span {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     gap: 5px;
 }
 
@@ -228,8 +226,8 @@ footer #lower-footer {
     flex-direction: row;
     width: 100%;
     justify-content: space-evenly;
-    border-top: 2px solid #F1EDE8;
-    border-bottom: 2px solid #F1EDE8;
+    border-top: 2px solid #2b2b2b;
+    border-bottom: 2px solid #2b2b2b;
 
 }
 
@@ -243,6 +241,7 @@ footer #lower-footer {
     flex-direction: column;
     align-items: center;
     gap: 1.25rem;
+    margin: 0;
 }
 
 #portfolio-cta h2 {
@@ -278,16 +277,9 @@ footer #lower-footer {
 
 @media (max-width: 1024px) {
     #nav-div-container {
-        padding: 0 1.5em 1em;
+        padding: 1em 1.5em 1em;
         flex-wrap: wrap;
         gap: 1em;
-    }
-
-    #nav-div-container ul {
-        width: 100%;
-        justify-content: flex-end;
-        gap: 1.25em;
-        padding-right: 0;
     }
 
     #sub-page-header h1 {
@@ -300,7 +292,7 @@ footer #lower-footer {
         text-align: left;
     }
 
-    #tesimonials-container,
+    #testimonials-container,
     #testimonials-container {
         flex-wrap: wrap;
         gap: 1em;
@@ -383,13 +375,21 @@ footer #lower-footer {
 /* Mobile Layout */
 
 @media (max-width: 768px) {
+    
+    #hero-container {
+        display: flex;
+        align-items: end;
+        height: 35dvh !important;
+    }
+    
     #nav-div-container {
-        flex-direction: column;
-        align-items: flex-start;
+        padding: 1em 1.5em 1em;
+        flex-wrap: wrap;
+        gap: 1em;
     }
 
     #nav-div-container ul {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
         gap: .75em;
     }
@@ -422,13 +422,25 @@ footer #lower-footer {
         gap: 1em;
         margin-bottom: 2.5em;
     }
+    #contact-link span{
+        justify-content: space-between ;
+    }
 
     #services-container #card-header,
     #card-container,
-    #tesimonials-container,
-    #testimonials-container {
+    #testimonials-container{
+     
         padding-left: 1.25em;
         padding-right: 1.25em;
+    }
+
+    #testimonials-container #test-col2, #test-col3 {
+        max-width: 20%;
+    }
+
+    #card-header p{
+        text-align: left;
+        padding: 0 !important;
     }
 
     .card {

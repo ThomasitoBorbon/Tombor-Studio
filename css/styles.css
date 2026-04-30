@@ -2,9 +2,16 @@
 
 /* Fonts */
 
+
 @font-face {
     font-family: "Neue Haas";
-    src: url("fonts/NeueHaas/NeueHaasDisplayBold.ttf") format("truetype");
+    src: url("/fonts/NeueHaas/NeueHaasDisplayBlack.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "Neue Haas";
+    src: url("/fonts/NeueHaas/NeueHaasDisplayBold.ttf") format("truetype");
 }
 
 /* Page Design Foundation */
@@ -18,8 +25,20 @@ body {
 
 .orange-link {
     color: #D86044;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 2px;
+    text-decoration: none;
+    
+
+}
+
+.card-link{
+    border-bottom: 2px solid #2b2b2b;
+    border-bottom-color: #D86044;
+}
+
+.card-link:hover{
+    transition: color 0.2s ease, border-color 0.2s ease;
+    border-bottom-color: white ;
+
 }
 
 
@@ -51,70 +70,6 @@ body {
     border-bottom-color: #D86044;
 }
 
-/* HERO SECTION */ 
-
-#hero-container {
-    display: flex;
-    align-items: end;
-    height: 85vh;
-}
-
-#hero-image{
-    width:90%;
-}
-
-/* CTA Header */
-
-#CTA-header {
-    background-color: #2B2B2B;
-    color: #F1EDE8;
-}
-
-#CTA-header h1 {
-    font-size: 500%;
-}
-
-#CTA-header p{
-    height: 20%;
-}
-
-#CTA-header span img {
-    width: 15px;
-}
-
-.container-stamp {
-    display: flex;
-}
-
-/* Testimonials Styles */
-
-#testimonials-container h1 {
-    font-size: 500%;
-    margin: 0;
-}
-
-#test-col1 span img {
-    width: 20px;
-}
-
-#test-col1 p {
-    font-size: 150%;
-}
-
-#test-col2 img {
-    width: 350px;
-    border-radius: 3em;
-}
-
-#test-col3 p {
-    color: #747474;
-    font-size: 500%
-}
-#stamp-testimonial {
-    width: 100%;
-    border-top: 2px solid #2B2B2B;
-    border-bottom: 2px solid #2B2B2B;
-}
 
 /* CTA container */
 
@@ -129,10 +84,16 @@ body {
 }
 
 #CTA-container h1 {
-    font-size: 300%;
+    font-size: clamp(2rem, 3vw, 4.5rem);
     text-align: center;
     text-decoration: underline;
+    max-width: 80%;
 }
+
+#CTA-container p {
+    color: #2B2B2B;
+}
+
 
 #CTA-container #left-align-head {
     position: absolute;
@@ -140,9 +101,16 @@ body {
     left: 30px;
 }
 
-#contact-link div {
+#contact-link a {
     border-bottom: solid 2px #2B2B2B;
     margin-bottom: .5em;
+    text-decoration: none;
+}
+
+#contact-link a:hover {
+    transition: color 0.2s ease, border-color 0.2s ease;
+    border-bottom: solid 2px #D86044;
+
 }
 
 #contact-link img:last-of-type {
@@ -192,6 +160,15 @@ body {
 
 #card3 a {
     color: #2B2B2B;
+}
+
+#card3 .card-link {
+    border-bottom: solid 2px #2B2B2B ;
+}
+
+#card3 .card-link:hover {
+    transition: color 0.2s ease, border-color 0.2s ease;
+    border-bottom-color: white ;
 }
 
 /* Footer Styles */

@@ -25,6 +25,10 @@
     padding-left: 2rem;
 }
 
+.process-step:last-of-type{
+    border-bottom: 2px solid #2B2B2B;;
+}
+
 /* Big number */
 .process-step::before {
     content: counter(step);
@@ -35,7 +39,7 @@
     line-height: 1;
     letter-spacing: -0.05em;
 
-    color: #D86044; /* accent */
+    color: #D86044; 
     min-width: 80px;
 }
 
@@ -66,7 +70,6 @@
     line-height: 0.85;
     font-weight: 900;
 }
-
 
 
 /* PRICING CARDS */

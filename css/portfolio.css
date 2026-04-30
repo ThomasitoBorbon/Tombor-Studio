@@ -9,7 +9,8 @@
     font-size: clamp(1.5rem, 3vw, 2.75rem);
     line-height: 1.15;
     letter-spacing: -0.04em;
-    margin-left: 1em;
+    margin-left: .3em;
+    max-width: 90%;
 }
 
 #logo-portfolio {
@@ -125,7 +126,7 @@
     #portfolio-cta {
         padding: 3rem 1.25rem;
     }
-        .logo-project {
+    .logo-project {
         flex-direction: column;
         gap: 1.5rem;
     }
@@ -134,6 +135,9 @@
         min-height: 240px;
     }
 
+    .logo-content{
+        margin-left: .5em;
+    }
     .logo-meta {
         flex-direction: column;
     }

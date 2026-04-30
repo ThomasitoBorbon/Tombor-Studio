@@ -2,35 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/contact.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js" defer></script>
     <title>Contact | Tombor Studio</title>
 </head>
 <body>
 
     <nav>
         <div id="nav-div-container">
-            <a href="index.html" class="logo-nav"><img src="branding/Alternate/TS - Alternate.svg" alt="Tombor Studio Logo"> </a>
+            <a href="index.html" class="logo-nav"><img src="branding/Alternate/TS-Alternate.svg" alt="Tombor Studio Logo"> </a>
             <ul>
                 <li><a href="about.html" class="navLinks">About</a></li>
                 <li><a href="contact.html" class="navLinks">Contact</a></li>
                 <li><a href="portfolio.html" class="navLinks">Portfolio</a></li>
+                <li><a href="services.html" class="navLinks">Services</a></li>
             </ul>
         </div>
     </nav>
 
     <main>
-
-        <!-- Header -->
         <section>
             <div class="container" id="sub-page-header">
                 <h1>Contact</h1>
             </div>
         </section>
-
-
 
         <section class="ticker" aria-label="Scrolling label">
           <div class="ticker__track">
@@ -39,7 +37,6 @@
           </div>
         </section>
 
-        <!-- Contact Form -->
         <section class="contact-section">
             <div class="container" id="contact-form-container">
                 <form id="contact-form" method="post">
@@ -60,10 +57,13 @@
 
                     <div class="form-field half">
                         <label for="project-type">Project Type</label>
-                        <select id="project-type" name="project-type">
+                        <select id="project-type" name="projectType">
                             <option>Website Design</option>
                             <option>Website Development</option>
                             <option>Redesign</option>
+                            <option>Signage</option>
+                            <option>Logo Design</option>
+                            <option>Logo Rebrand</option>
                             <option>Other</option>
                         </select>
                     </div>
@@ -73,6 +73,8 @@
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
 
+                    <div class="error" id="errorMsg"></div>
+                    
                     <div class="form-actions">
                         <button type="submit">Submit Inquiry</button>
                     </div>

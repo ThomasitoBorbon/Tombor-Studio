@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href ='css/services.css'>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href ='/css/services.css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services | Tombor Studio</title>
 </head>
@@ -12,25 +12,26 @@
 
     <nav>
         <div id="nav-div-container">
-            <a href="index.html" class="logo-nav"><img src="branding/Alternate/TS - Alternate.svg" alt="Tombor Studio Logo"> </a>
+            <a href="index.html" class="logo-nav"><img src="branding/Alternate/TS-Alternate.svg" alt="Tombor Studio Logo"> </a>
             <ul>
                 <li><a href="about.html" class="navLinks">About</a></li>
                 <li><a href="contact.html" class="navLinks">Contact</a></li>
                 <li><a href="portfolio.html" class="navLinks">Portfolio</a></li>
+                <li><a href="services.html" class="navLinks">Services</a></li>
             </ul>
         </div>
     </nav>
 
     <main>
 
-        <!-- Header -->
+
         <section>
             <div class='container' id="sub-page-header">
                 <h1>Our Services</h1>
             </div>
         </section>
 
-        <!-- Services -->
+
 
         <section>
             <div class="container" id="services-container">
@@ -43,7 +44,7 @@
                         <h2>Website Design</h2>
                         <p>Simple, effective websites that feel right. Designed to work smoothly for you and your users.</p>
                         
-                        <span>
+                        <span class="card-link">
                             <a  class="orange-link" href="#"> VIEW PORTFOLIO</a>
                             <img src="icons/Red Arrow - Crooked.svg" style="width: 25px;" alt="arrow icon">
                         </span>
@@ -58,14 +59,14 @@
                             Created to work across every touchpoint.
                             Built to grow with your brand.</p>
                         
-                        <span>
+                        <span class="card-link">
                             <a class="orange-link" href="portfolio.html"> VIEW PORTFOLIO</a>
                             <img src="icons/Red Arrow - Crooked.svg" style="width: 25px;" alt="arrow icon">
                         </span>
                     </div>
 
                     <div class="card" id="card3">
-                        <span>
+                        <span >
                             <img src="icons/card.svg" style="width:50px;" alt="website icon">
                         </span>
                         <h2>Small Format Signage</h2>
@@ -73,7 +74,7 @@
                             Clean, readable layouts that communicate quickly.
                             Ready for print and real-world use.</p>
                         
-                        <span>
+                        <span class="card-link">
                             <a class="orange-link" href="#"> VIEW PORTFOLIO</a>
                             <img src="icons/Arrow - crooked.svg" style="width: 25px;" alt="arrow icon">
                         </span>
@@ -82,7 +83,6 @@
             </div>
         </section>
 
-        <!-- Process -->
         <section>
             <h2 id="services-header">Process</h2>
             <div class="container" id="services-process">
@@ -199,21 +199,21 @@
                 </span>
                 <h1> Ready to improve your online presence? Let’s build something that works for your business.</h1>
                 <div id="contact-link">
-                    <div>
+                    <a href="mailto:thomasitoborbon12@gmail.com">
                         <span>
                             <img class="icons" src="icons/email.svg" alt="email icon">
                             <p>Email us</p>
                             <img  class="icons"src="icons/Arrow.svg" alt="phone icon">
                         </span>
-                    </div>
+                    </a>
 
-                    <div>
+                    <a href="tel:+16022439911">
                         <span>
                             <img class="icons" src="icons/phone.svg" alt="phone icon">
                             <p>Call us</p>
                             <img class="icons" src="icons/Arrow.svg" alt="Arrow Icon">
                         </span>
-                    </div>
+                    </a>
                 </div>
                 <span class="container-stamp">
                     <p>Tombor Studio</p>
@@ -221,6 +221,7 @@
                     <p>©2026</p>
                 </span>
             </div>
+
         </section>
 
     </main>
